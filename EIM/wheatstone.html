@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+    <title>Wheat Stone Bridge</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles1.css">
+  
+  </head>
+  <body>
+    <nav class = "navbar navbar-dark navbar-expand-sm fixed-top">
+      <div class = "container">
+        <div class = "collapse navbar-collapse" id = "Navbar">
+          <ul class = "navbar-nav mr-auto">
+            <li class = "nav-item"><a class = "nav-link" href = "./index.html">Home</a></li>
+            <li class = "nav-item"><a class = "nav-link" href = "procedure_wheatstone.html">Procedure</a></li>
+            <li class = "nav-item active" ><a class = "nav-link" href = "#">Experiment</a></li>
+          </ul>
+        </div>
+      </div>	
+    </nav>
+    
+      <header class = "jumbotron">
+        <div class = "container">
+        </div>
+    </header>
+
+    <div class="container animated">
+      <div class = "form-group">
+
+        <div class="page">
+          <label for="" >Voltage: </label>
+          <input type="text" name="" value="" id="voltage">
+          <br>
+          <br>
+          <label for="">Current: </label>
+          <label for="" id="current">0.00</label>
+
+          <img class="image ml-auto" id = "img" src="images/off.jpg" alt="">
+          <br>
+          <br>
+  
+          <label for="">P: </label>
+          <input type="text" name="" value="" id="resistanceP" >
+          <br>
+         <br>
+          <label for="">Q: </label>
+          <input type="text" name="" value="" id="resistanceQ">
+          <br>
+          <br>
+          <label for="">S: </label>
+          <input type="text" name="" value="" id="resistanceS">
+          <br>
+          <br>
+          <br>
+          <button class="assign btn btn-light" type="button" name="button" id = "assignR">Assign Random R</button>
+          <br>
+          <br>
+          <button class="assign btn btn-light" type="button" name="button" id="power">Turn on</button>
+
+        </div>
+      
+
+        <br>
+        <br>
+        <br>
+        <div class="form-group">
+          <div class = "row">
+            <label for="">R: </label>
+            <input type="text" name="" value="" id = "resistanceR"></input>
+            <label for="" id = "checkedAnswer"></label>
+          </div>
+          <div class="row mt-2">
+            <button class="assign btn btn-light" type="button" name="button" id = "check">Check Value</button>
+            <button class="assign btn btn-light" type="button" name="button" id="enter">Enter Readings</button>  
+          </div>  
+        </div>
+
+        <div class="mt-5">
+          <table id = "observation">
+            <tr>
+              <th>
+                S.No.
+              </th>
+              <th>
+                P(ohms)
+              </th>
+              <th>
+                Q(ohms)
+              </th>
+              <th>
+                S(ohms)
+              </th>
+              <th>
+                R = S*(P/Q)(ohms)
+              </th>
+            </tr>
+            
+          </table>
+        </div>
+
+        
+      
+      </div>
+
+    </div>
+  </body>
+  <script type="text/javascript" src="scripts/wheatstone.js"></script>
+</html>
