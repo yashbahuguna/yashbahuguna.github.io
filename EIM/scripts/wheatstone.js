@@ -12,7 +12,7 @@ var G = 0.01;
 
 var R = Math.floor(Math.random() * (11)) + 5;
 
-console.log(R," ",P, " ",Q, " ",S, " ");
+//console.log(R," ",P, " ",Q, " ",S, " ");
 
 photo = document.getElementById("img");
 
@@ -30,7 +30,7 @@ power.onclick = ()=> {
         P = Number(document.getElementById("resistanceP").value);
         Q = Number(document.getElementById("resistanceQ").value);
         S = Number(document.getElementById("resistanceS").value);
-        console.log(V, R," ",P, " ",Q, " ",S);
+       // console.log(V, R," ",P, " ",Q, " ",S);
         result = ( V*((R*Q-P*S)/(P*R*(Q+S) + (P+R)*Q*S + G*(P+R)*(Q+S))) ).toFixed(5);
         if (result == 0) {
             document.getElementById("current").innerHTML = "NULL"
@@ -74,7 +74,7 @@ power.onclick = ()=> {
 
 document.getElementById("assignR").onclick = ()=>{
     R = Math.floor(Math.random() * (11)) + 5;
-    console.log(R);
+  //  console.log(R);
 }
 document.getElementById("resistanceR").onclick = () => {
     enter.disabled = true;

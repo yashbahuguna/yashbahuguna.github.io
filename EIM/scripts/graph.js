@@ -441,7 +441,7 @@ generator.append("text")//dc screen label
 
 function assignRandomV () {
     v_max = Math.floor(Math.random() * (11)) + 5;
-    console.log(v_max);
+    //console.log(v_max);
 }
 
 /////////////////observation buttons////////////////////////////////////////////////////////
@@ -506,7 +506,7 @@ document.getElementById("checkAnswer").onclick = ()=>{
         document.getElementById("resultv").innerHTML = "Correct!";
     }
     else {
-        console.log(v_max + enteredV_max)
+      //  console.log(v_max + enteredV_max)
         document.getElementById("resultv").innerHTML = "wrong";
         enter.disabled = true;
     }
