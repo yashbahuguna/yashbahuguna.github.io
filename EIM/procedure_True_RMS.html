@@ -116,7 +116,7 @@
                                             
                                         </div>
                                     </li>                                    
-    
+                                    
                                     <li class="list-group-item">
                                         <div class="row">
                                             <div class="col-sm-7 col-12">
@@ -126,19 +126,26 @@
                                                 During the negative half-cycle of the input AC voltage, terminal 2 will become positive with relative to terminal 2 and centre-tap.
                                                  This will lead to forward bias in diode D2 and cause current to flow through it.
                                                  During this time, diode D1 is in reverse bias and will block current through it.
+                                                 <br>
+                                                 
+                                                During the positive cycle, diode D1 conducts and during negative cycle diode D2 conducts and during positive cycle.
+                                                As a result, both half-cycles are allowed to pass through. The average output DC voltage here is almost twice of the DC output voltage of a half-wave rectifier.<br><br>
+                                                
                                             </div>
-                                            <img class="img img-fluid ml-auto ml-auto col-sm-4" src="images/full-wave-1.png">
+                                            <img class="img img-fluid ml-auto ml-auto col-sm-5" src="images/full-wave-1.png">
                                             
                                         </div>
                                     </li>
-    
+
+                                    <h3 class="mt-5"> 
+                                        Measurment of Form Factor:
+                                    </h3>
+
                                     <li class="list-group-item">
                                         <div class="row">
                                             <div class="col-12">
-                                                During the positive cycle, diode D1 conducts and during negative cycle diode D2 conducts and during positive cycle.
-                                                As a result, both half-cycles are allowed to pass through. The average output DC voltage here is almost twice of the DC output voltage of a half-wave rectifier.<br><br>
-
-                                                Ir.m.s and Er.m.s are the roots mean square values of the current and the voltage respectively, and Iav and Eav are the average values of the alternating current and the voltage respectively.
+                                                <h5 class="mt-2"> Using CRO -</h5>
+                                                
                                                     <br><br>The Form Factor for the full rectified sine wave is given as:
                                                     <br>
                                                     <h4>
@@ -149,28 +156,37 @@
                                                     The Form Factor for the half rectified sine wave is given as:
                                                     <br>
                                                     <h4>((V_peak)/2 )/((V_peak)/π) = 1.57</h4>
+                                                    
                                                     <br>
-                                                    <br>
-                                                    <br>
-                                                    <br>
+                                                    <h3 class="mt-2"> Using Multimeter -</h3> 
                                                     If the form factor is to be calculated using an AC + DC True multimeter, peak value of the voltage will not be known.<br>
                                                     In this case multimeter readings are used.
                                                     <h5 class="mt-3">Multimeter DC reading: </h5> For most multimeters this is the average value of the signal.<br><br>
                                                     <h5>Multimeter AC reading: </h5> For most multimeters this is the standard deviation value of the signal.<br><br>
+                                                    
                                                     <p>
-                                                        Thus for calculation of Form Factor the formula used in case of signals that have equally distributed positive and negative parts over a period (eg. sine wave) is-<br>
-                                                        <h6 class="text-center"> AC reading / DC reading</h6>
+                                                        In case of signals that have equally distributed positive and negative parts over a period (eg. sine wave), 
+                                                        DC reading on the multimeter will be zero because average value over a period will be zero and the AC reading will show 
+                                                        the true RMS value of given input signal.  
                                                         <br>
-                                                        And for calculation of Form Factor the formula used in case of signals that do not have equally distributed positive and negative parts pver a period(eg. rectified waves) is-<br>
-                                                        <h6 class="text-center"> [√((AC reading)^2 + (DC reading)^2)]/ DC reading</h6>
+                                                        <br>
+                                                        But in case the input signal has a finite DC component(eg. as in the case of rectified waves) then the standard deviation value and RMS value
+                                                        are no longer the same since there is a finite non-zero mean that is the DC component associated with the signal. This DC component has a value equal to 
+                                                        the DC reading on the multimeter.
+                                                        <br>
+                                                        In this case the RMS value is given by- 
+                                                        <h6 class="text-center"> Vrms = √((AC reading)^2 + (DC reading)^2)</h6>
+                                                        <br>
+                                                        
+                                                       
+                                                        for calculation of Form Factor the formula used in case of signals that do not have equally distributed positive and negative parts over a period is-<br>
+                                                        <h5  class="mt-2 text-center font-weight-bold">Form Factor = [√((AC reading)^2 + (DC reading)^2)]/ DC reading</h5>
                                                     </p>
 
 
                                             </div>
                                         </div>
                                     </li>  
-
-
                                 </ul>    
                         </div> 
                     </div>
@@ -190,8 +206,8 @@
                         <li class="list-group-item">1.	Click on “Assign random V peak” button to assign a random peak voltage to the function generator.</li>
                         <li class="list-group-item">2.	Click on power button on the function generator and then select Half-Wave or Full-Wave. Accordingly,a signal will be plotted in the CRO screen and corresponding values will appear on the multimeter screen.</li>
                         <li class="list-group-item">3.(a)You can set the axes scaling using the sliders present on CRO screen (x-scale, y-scale) when a suitable scaling is achieved, 
-                                                        measure the peak voltage value from the CRO screen this will be used to measure form factor using CRO.<br>
-                                                      (b) To measure the form factor using multimeter, substitute the readings into the formula given above.
+                                                        measure the peak voltage value from the CRO screen this will be used to calculate form factor using CRO.<br>
+                                                      (b) To calculate the form factor using multimeter, substitute the AC and the DC readings appropriately into the formula given above.
                                                     </li>                                                  
                         <li class="list-group-item">4.	You can enter the peak value of the signal in the textbox (by referring the signal in CRO) and verify it by clicking on the “Check” button.</li>
                         <li class="list-group-item">5.	Then enter the form factor value in the text boxes and check it by clicking on the “Check” button.</li>
