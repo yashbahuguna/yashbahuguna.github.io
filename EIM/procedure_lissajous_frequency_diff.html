@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/styles1.css">
+
+</head>
+<body>
+    <nav class = "navbar navbar-dark navbar-expand-sm fixed-top">
+		<div class = "container">
+			<div class = "collapse navbar-collapse" id = "Navbar">
+				<ul class = "navbar-nav mr-auto">
+                    <li class = "nav-item"><a class = "nav-link" href = "./index.html">Home</a></li>
+					<li class = "nav-item active"><a class = "nav-link" href = "#">Procedure</a></li>
+					<li class = "nav-item" ><a class = "nav-link" href = "./lissajous_frequency_diff.html">Experiment</a></li>
+				</ul>
+			</div>
+		</div>	
+	</nav>
+    <div class="animated">
+        <header class = "jumbotron">
+            <div class = "container">
+                <div class = "row row-header">
+                    <div class = "col-12 col-sm-6">
+                        <h2>Aim:</h2>
+                        <h4>To find the frequency of a sinusoidal signal using lissajous figure method.</h4>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="row">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="font-weight-bold">Theory</h4>
+                    </div>
+                    <div class="card-body row">
+                        <div class="col-12 col-sm-6">
+                            When the frequencies of two sinusoids being superimposed is different arbitrary curves are formed we can calculate the ratio of their frequencies by the given formula.<br>
+                            Horizontal and vertical tangencies can be calculated by counting intersection with the x and y axes respectively.<br> 
+                            If frequency of one signal is known then that of other can be calculated.
+
+                            <br><br> 
+                            <img src="images/frequency_ratio_formula.png" class="img img-fluid"></img>
+                        </div> 
+                        
+                        <div class="col-12 col-sm-5 ml-auto">
+                            Example:<br>
+                            <img class="img img-fluid" src ="images/lissajous_frequency_diff_figure.png">
+                            fy/fx = 4/2 = 2
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+
+            <div class="row">
+                <div class="card mt-5 mb-5">
+                    <div class="card-header secondary">
+                        <h4 class = "font-weight-bold">Procedure</h4>
+                    </div>
+    
+                    <div class="card-body list-group-flush  col-12">
+                        
+                        <li class="list-group-item">1.	Click on Turn on to turn on the oscilloscope and feed it with sinusiodal inputs with parameters specified by the sliders.</li>
+                        <li class="list-group-item">2.	Set amplitude of first sinusoid to a desired value using the slider.</li>
+                        <li class="list-group-item">3.  Set amplitude of second sinusoid to a desired value using the slider.</li>
+                        <li class="list-group-item">4. 	Set frequency of first sinusoid to a desired value using the slider this will be reference or known frequency.</li>  	
+                        <li class="list-group-item">5.	Click on “Assign Random Frequency” button (this button whenever clicked assigns a random value of frequency to the second sinusoud).</li>
+                        <li class="list-group-item">6.  Calculate the ratio of two given frequencies using the formula above.</li>
+                        <li class="list-group-item">7.	Calculate the unknown frequency since frequency of the first sinusoid that is along the x axis is known.</li>
+                        <li class="list-group-item">8.	Check your answer by clicking on “Check” button.</li>
+                        <li class="list-group-item">9.	To add readings in the table, click on “Enter readings” button.</li>
+                        <li class="list-group-item">10.	Above procedure will complete one set of readings repeat the same for more.</li>
+                    </div>
+                    
+                </div>
+            
+            </div>
+
+            
+            
+        </div>
+    </div>
+</body>
+</html>
