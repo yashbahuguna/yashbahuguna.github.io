@@ -20,7 +20,7 @@
  @media (min-width: 1700px) {
     /* CSS that should be displayed if width is equal to or less than 800px goes here */
     .chart {
-        width: 45%;
+        width: 40%;
     }
     .tw {
         width:28%
