@@ -17,7 +17,7 @@
  }
  
 
- @media (min-width: 1800px) {
+ @media (min-width: 1700px) {
     /* CSS that should be displayed if width is equal to or less than 800px goes here */
     .chart {
         width: 45%;
@@ -27,7 +27,7 @@
     }
 
   }
-  @media (max-width: 1800px) {
+  @media (max-width: 1700px) {
     /* CSS that should be displayed if width is equal to or less than 800px goes here */
     .ms-auto {
         margin-left:0;
