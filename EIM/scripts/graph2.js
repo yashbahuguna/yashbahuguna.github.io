@@ -68,6 +68,7 @@ document.getElementById("assign").onclick = () => {
                 b = Number((Math.random()*3.14).toPrecision(2));
                 d3.select('.locus').remove();
                 addFigure();
+                console.log(b);
         }
           
         
@@ -103,7 +104,7 @@ document.getElementById("enterReading").onclick = ()=> {
     var newCellCalculated  = newRow.insertCell(2);
     var newCellActual  = newRow.insertCell(3);
     var newCellError  = newRow.insertCell(4);
-
+        
     newCellsno.innerHTML = sno.toString();
     newCellFrequency.innerHTML = a.toString();
 
