@@ -1,0 +1,89 @@
+<<<<<<< HEAD
+.cc {
+    height: 400px;
+    border: none;
+}
+@media screen and (max-width: 1700px) {
+    .chart {
+         width: 90%;
+    }
+}
+
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+    background-color: rgb(224, 241, 252);
+ }
+ .th .thead {
+     display:flex;
+     pad:0;
+ }
+ 
+
+ @media (min-width: 1700px) {
+    /* CSS that should be displayed if width is equal to or less than 800px goes here */
+    .chart {
+        width: 45%;
+    }
+    .tw {
+        width:25%
+    }
+
+  }
+  @media (max-width: 1700px) {
+    /* CSS that should be displayed if width is equal to or less than 800px goes here */
+    .ms-auto {
+        margin-left:0;
+    }
+
+  }
+
+ 
+
+
+ .tr .table{
+    border:0px; 
+ }
+=======
+.cc {
+    height: 400px;
+    border: none;
+}
+@media screen and (max-width: 480px) {
+    .chart {
+         width: 90%;
+    }
+}
+
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+    background-color: rgb(224, 241, 252);
+ }
+ .th .thead {
+     display:flex;
+     pad:0;
+ }
+ 
+
+ @media (min-width: 800px) {
+    /* CSS that should be displayed if width is equal to or less than 800px goes here */
+    .chart {
+        width: 40%;
+    }
+    .tw {
+        width:25%
+    }
+
+  }
+  @media (max-width: 800px) {
+    /* CSS that should be displayed if width is equal to or less than 800px goes here */
+    .ms-auto {
+        margin-left:0;
+    }
+
+  }
+
+ 
+
+
+ .tr .table{
+    border:0px; 
+ }
+>>>>>>> cb9d0eb5f9062791b59f03e9fab1b42a411a55db
